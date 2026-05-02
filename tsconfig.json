@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",          // Essencial para usar GramJS com ESM
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",            // Onde o código final vai ficar
+    "rootDir": "./src",            // Onde seu código TS está
+    "strict": true,                // Boas práticas que aprendemos no projeto Web
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"]
+}

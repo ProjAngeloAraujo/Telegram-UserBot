@@ -1,0 +1,21 @@
+# Dependências
+node_modules/
+dist/
+npm-debug.log*
+
+# Variáveis de Ambiente (SEGURANÇA!)
+.env
+api_id.txt
+session.txt
+
+# Configurações do TypeScript
+tsconfig.tsbuildinfo
+
+# Logs e Dados
+logs/
+*.log
+data/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
