@@ -6,8 +6,9 @@
   "scripts": {
     "connect": "tsx src/connect.ts",
     "dev": "tsx src/index.ts",
+    "polling": "tsx src/polling.ts",
     "build": "tsc",
-    "start": "tsx src/index.ts",
+    "start": "tsx src/polling.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
