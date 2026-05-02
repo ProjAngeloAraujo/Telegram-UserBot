@@ -25,6 +25,15 @@ export class UserBotConnect {
         );
     }
 
+    public async connect(): Promise<void> {
+        await this.client.start({
+            phoneNumber: async () => { throw new Error("Sessão inválida! Rode o login primeiro."); },
+            password: async () => { throw new Error("Sessão inválida! Rode o login primeiro."); },
+            phoneCode: async () => { throw new Error("Sessão inválida! Rode o login primeiro."); },
+            onError: (err) => console.error("Erro na conexão:", err),
+        });
+    }
+
     public async iniciar(): Promise<void> {
         console.log("Iniciando conexão com o Telegram...");
         

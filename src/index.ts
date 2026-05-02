@@ -12,6 +12,7 @@ import { NewMessage } from "telegram/events/index.js";
         
         console.log("🚀 Iniciando conexão com o Telegram...");
         await client.connect();
+        await connect.connect();
 
         console.log("🔐 Validando autorização...");
         const isAuthorized = await client.checkAuthorization();
