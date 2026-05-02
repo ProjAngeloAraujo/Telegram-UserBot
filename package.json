@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "connect": "ts-node-esm src/connect.ts",
-    "dev": "ts-node-esm src/index.ts",
+    "connect": "tsx src/connect.ts",
+    "dev": "tsx src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.ts",
+    "start": "tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +17,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/ProjAngeloAraujo/Telegram-UserBot/issues"
   },
@@ -30,6 +30,7 @@
   "devDependencies": {
     "@types/node": "^25.6.0",
     "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.3"
   }
 }
